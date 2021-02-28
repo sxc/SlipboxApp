@@ -15,6 +15,14 @@
 		34F8374625EBDD90000EBA74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34F8374425EBDD90000EBA74 /* Main.storyboard */; };
 		34F8375225EBDD91000EBA74 /* SlipboxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8375125EBDD91000EBA74 /* SlipboxAppTests.swift */; };
 		34F8375D25EBDD91000EBA74 /* SlipboxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8375C25EBDD91000EBA74 /* SlipboxAppUITests.swift */; };
+		34F8377225EBE09F000EBA74 /* Note+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8377125EBE09F000EBA74 /* Note+helper.swift */; };
+		34F8377F25EBE2E0000EBA74 /* NSPredicate+helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8377E25EBE2E0000EBA74 /* NSPredicate+helper.swift */; };
+		34F8378B25EBE6D7000EBA74 /* SlipboxPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8378A25EBE6D7000EBA74 /* SlipboxPadApp.swift */; };
+		34F8378D25EBE6D7000EBA74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8378C25EBE6D7000EBA74 /* ContentView.swift */; };
+		34F8378F25EBE6DB000EBA74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8378E25EBE6DB000EBA74 /* Assets.xcassets */; };
+		34F8379225EBE6DB000EBA74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34F8379125EBE6DB000EBA74 /* Preview Assets.xcassets */; };
+		34F8379425EBE6DB000EBA74 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F8379325EBE6DB000EBA74 /* Persistence.swift */; };
+		34F837B025EBE786000EBA74 /* SlipboxApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 34F8373C25EBDD8D000EBA74 /* SlipboxApp.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,15 @@
 		34F8375825EBDD91000EBA74 /* SlipboxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlipboxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34F8375C25EBDD91000EBA74 /* SlipboxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipboxAppUITests.swift; sourceTree = "<group>"; };
 		34F8375E25EBDD91000EBA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F8377125EBE09F000EBA74 /* Note+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+helper.swift"; sourceTree = "<group>"; };
+		34F8377E25EBE2E0000EBA74 /* NSPredicate+helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+helper.swift"; sourceTree = "<group>"; };
+		34F8378825EBE6D7000EBA74 /* SlipboxPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlipboxPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34F8378A25EBE6D7000EBA74 /* SlipboxPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlipboxPadApp.swift; sourceTree = "<group>"; };
+		34F8378C25EBE6D7000EBA74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		34F8378E25EBE6DB000EBA74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		34F8379125EBE6DB000EBA74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		34F8379325EBE6DB000EBA74 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		34F8379825EBE6DB000EBA74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,13 +91,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34F8378525EBE6D7000EBA74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		34F8372C25EBDD8C000EBA74 = {
 			isa = PBXGroup;
 			children = (
+				34F8378325EBE57A000EBA74 /* Shared */,
 				34F8373725EBDD8D000EBA74 /* SlipboxApp */,
+				34F8378925EBE6D7000EBA74 /* SlipboxPad */,
 				34F8375025EBDD91000EBA74 /* SlipboxAppTests */,
 				34F8375B25EBDD91000EBA74 /* SlipboxAppUITests */,
 				34F8373625EBDD8D000EBA74 /* Products */,
@@ -93,6 +119,7 @@
 				34F8373525EBDD8D000EBA74 /* SlipboxApp.app */,
 				34F8374D25EBDD91000EBA74 /* SlipboxAppTests.xctest */,
 				34F8375825EBDD91000EBA74 /* SlipboxAppUITests.xctest */,
+				34F8378825EBE6D7000EBA74 /* SlipboxPad.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,13 +127,14 @@
 		34F8373725EBDD8D000EBA74 /* SlipboxApp */ = {
 			isa = PBXGroup;
 			children = (
+				34F8376D25EBE02C000EBA74 /* model */,
 				34F8373825EBDD8D000EBA74 /* AppDelegate.swift */,
 				34F8373A25EBDD8D000EBA74 /* ContentView.swift */,
 				34F8373F25EBDD90000EBA74 /* Assets.xcassets */,
 				34F8374425EBDD90000EBA74 /* Main.storyboard */,
 				34F8374725EBDD90000EBA74 /* Info.plist */,
 				34F8374825EBDD90000EBA74 /* SlipboxApp.entitlements */,
-				34F8373C25EBDD8D000EBA74 /* SlipboxApp.xcdatamodeld */,
+				34F8377E25EBE2E0000EBA74 /* NSPredicate+helper.swift */,
 				34F8374125EBDD90000EBA74 /* Preview Content */,
 			);
 			path = SlipboxApp;
@@ -136,6 +164,43 @@
 				34F8375E25EBDD91000EBA74 /* Info.plist */,
 			);
 			path = SlipboxAppUITests;
+			sourceTree = "<group>";
+		};
+		34F8376D25EBE02C000EBA74 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				34F8377125EBE09F000EBA74 /* Note+helper.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		34F8378325EBE57A000EBA74 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				34F8373C25EBDD8D000EBA74 /* SlipboxApp.xcdatamodeld */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		34F8378925EBE6D7000EBA74 /* SlipboxPad */ = {
+			isa = PBXGroup;
+			children = (
+				34F8378A25EBE6D7000EBA74 /* SlipboxPadApp.swift */,
+				34F8378C25EBE6D7000EBA74 /* ContentView.swift */,
+				34F8378E25EBE6DB000EBA74 /* Assets.xcassets */,
+				34F8379325EBE6DB000EBA74 /* Persistence.swift */,
+				34F8379825EBE6DB000EBA74 /* Info.plist */,
+				34F8379025EBE6DB000EBA74 /* Preview Content */,
+			);
+			path = SlipboxPad;
+			sourceTree = "<group>";
+		};
+		34F8379025EBE6DB000EBA74 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				34F8379125EBE6DB000EBA74 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +259,23 @@
 			productReference = 34F8375825EBDD91000EBA74 /* SlipboxAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		34F8378725EBE6D7000EBA74 /* SlipboxPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34F8379925EBE6DB000EBA74 /* Build configuration list for PBXNativeTarget "SlipboxPad" */;
+			buildPhases = (
+				34F8378425EBE6D7000EBA74 /* Sources */,
+				34F8378525EBE6D7000EBA74 /* Frameworks */,
+				34F8378625EBE6D7000EBA74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlipboxPad;
+			productName = SlipboxPad;
+			productReference = 34F8378825EBE6D7000EBA74 /* SlipboxPad.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +296,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 34F8373425EBDD8D000EBA74;
 					};
+					34F8378725EBE6D7000EBA74 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 34F8373025EBDD8C000EBA74 /* Build configuration list for PBXProject "SlipboxApp" */;
@@ -232,6 +317,7 @@
 				34F8373425EBDD8D000EBA74 /* SlipboxApp */,
 				34F8374C25EBDD91000EBA74 /* SlipboxAppTests */,
 				34F8375725EBDD91000EBA74 /* SlipboxAppUITests */,
+				34F8378725EBE6D7000EBA74 /* SlipboxPad */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +347,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		34F8378625EBE6D7000EBA74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F8379225EBE6DB000EBA74 /* Preview Assets.xcassets in Resources */,
+				34F8378F25EBE6DB000EBA74 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -268,7 +363,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34F8377F25EBE2E0000EBA74 /* NSPredicate+helper.swift in Sources */,
 				34F8373E25EBDD8D000EBA74 /* SlipboxApp.xcdatamodeld in Sources */,
+				34F8377225EBE09F000EBA74 /* Note+helper.swift in Sources */,
 				34F8373B25EBDD8D000EBA74 /* ContentView.swift in Sources */,
 				34F8373925EBDD8D000EBA74 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +384,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				34F8375D25EBDD91000EBA74 /* SlipboxAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34F8378425EBE6D7000EBA74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F8379425EBE6DB000EBA74 /* Persistence.swift in Sources */,
+				34F837B025EBE786000EBA74 /* SlipboxApp.xcdatamodeld in Sources */,
+				34F8378D25EBE6D7000EBA74 /* ContentView.swift in Sources */,
+				34F8378B25EBE6D7000EBA74 /* SlipboxPadApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,6 +672,53 @@
 			};
 			name = Release;
 		};
+		34F8379A25EBE6DB000EBA74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlipboxPad/Preview Content\"";
+				DEVELOPMENT_TEAM = SX2P37942F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlipboxPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenxiaochun.SlipboxPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		34F8379B25EBE6DB000EBA74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SlipboxPad/Preview Content\"";
+				DEVELOPMENT_TEAM = SX2P37942F;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SlipboxPad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shenxiaochun.SlipboxPad;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -599,6 +754,15 @@
 			buildConfigurations = (
 				34F8376825EBDD91000EBA74 /* Debug */,
 				34F8376925EBDD91000EBA74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		34F8379925EBE6DB000EBA74 /* Build configuration list for PBXNativeTarget "SlipboxPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34F8379A25EBE6DB000EBA74 /* Debug */,
+				34F8379B25EBE6DB000EBA74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
