@@ -29,6 +29,7 @@ struct ContentView: View {
             
             List(notes) { note in
                 Text("Title \(note.title ?? "") with date \(note.creationDate ?? Date(), formatter: itemFormatter) ")
+                    .font(.title)
                 
             }
             
@@ -49,5 +50,6 @@ private let itemFormatter: DateFormatter = {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }
